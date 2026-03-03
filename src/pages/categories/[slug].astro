@@ -2,11 +2,12 @@
 import PostPreview from "@/components/blocks/PostPreview.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import { getPosts } from "@/utils/post";
 import { Icon } from "astro-icon/components";
 
 export async function getStaticPaths() {
   const allCategories = await getCollection("categories");
-  const allPosts = await getCollection("posts");
+  const allPosts = await getPosts();
 
   return allCategories.map((cat) => {
     const filteredPosts = allPosts.filter(

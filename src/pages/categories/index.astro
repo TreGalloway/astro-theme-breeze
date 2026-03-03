@@ -23,26 +23,28 @@ const categoryCounts = allPosts.reduce((acc: Record<string, number>, post) => {
       </p>
     </header>
 
-    <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
       {
         allCategories.map((cat) => (
           <a
             href={`/categories/${cat.data.slug}`}
-            class="group relative flex h-full flex-col rounded-3xl border border-border/50 bg-muted/20 p-8 shadow-sm hover:border-primary/30 hover:bg-card"
+            class="group flex items-center gap-4 rounded-2xl border border-border/50 bg-muted/20 p-5 hover:border-primary/30 hover:bg-card"
           >
-            <div class="mb-6 flex items-start justify-between">
-              <h3 class="text-xl font-bold group-hover:text-primary">
-                {cat.data.name}
-              </h3>
-              <span class="rounded-lg bg-border/30 px-2 py-1 font-mono text-[10px] text-muted-foreground">
-                {categoryCounts[cat.id] || 0}
-              </span>
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <Icon name={cat.data.icon} class="h-6 w-6" />
             </div>
-            <p class="flex-1 text-sm leading-relaxed font-light text-muted-foreground italic">
-              {cat.data.description || "No description"}
-            </p>
-            <div class="mt-6 flex items-center gap-1 text-[10px] font-bold text-primary opacity-0 group-hover:opacity-100">
-              View all posts <Icon name="mdi:arrow-right" />
+            <div class="min-w-0 flex-1">
+              <div class="mb-1 flex items-center gap-2">
+                <h3 class="truncate text-base font-bold group-hover:text-primary">
+                  {cat.data.name}
+                </h3>
+                <span class="shrink-0 rounded bg-border/30 px-1.5 py-0.5 font-mono text-[10px] text-muted-foreground">
+                  {categoryCounts[cat.id] || 0}
+                </span>
+              </div>
+              <p class="line-clamp-2 text-xs text-muted-foreground">
+                {cat.data.description || "No description"}
+              </p>
             </div>
           </a>
         ))

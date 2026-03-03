@@ -64,8 +64,18 @@ const site = {
 
   // --- Tools Page Data ---
   tools: [
-    { name: "development", items: ["VS Code", "Terminal", "Chrome", "Git"] },
-    { name: "design", items: ["Figma"] },
+    {
+      name: "development",
+      items: ["VS Code", "WebStorm", "Terminal", "Git", "Docker", "Postman"]
+    },
+    {
+      name: "design",
+      items: ["Figma", "Sketch", "Adobe XD", "Photoshop"]
+    },
+    {
+      name: "productivity",
+      items: ["Notion", "Obsidian", "Raycast", "Arc Browser"]
+    },
   ],
 
   // --- UI Labels ---

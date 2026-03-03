@@ -2,20 +2,24 @@
   {
     "name": "Technology",
     "slug": "technology",
-    "description": "Articles about web development and programming"
+    "description": "Articles about web development and programming",
+    "icon": "mdi:code-tags"
   },
   {
     "name": "Design",
     "slug": "design",
-    "description": "Thoughts on UI/UX and visual design"
+    "description": "Thoughts on UI/UX and visual design",
+    "icon": "mdi:palette"
   },
   {
     "name": "Life",
     "slug": "life",
-    "description": "Daily life and personal reflections"
+    "description": "Daily life and personal reflections",
+    "icon": "mdi:coffee"
   },
   {
     "name": "Uncategorized",
-    "slug": "uncategorized"
+    "slug": "uncategorized",
+    "icon": "mdi:folder"
   }
 ]
