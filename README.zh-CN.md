@@ -6,6 +6,8 @@
 
 [English Documentation](./README.md)
 
+[更新日志 / Changelog](./CHANGELOG.md)
+
 ## 特性
 
 - 深色 / 浅色模式平滑切换

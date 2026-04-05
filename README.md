@@ -6,6 +6,8 @@ Built with [Astro 5](https://astro.build), [Tailwind CSS v4](https://tailwindcss
 
 [中文文档 / Chinese Documentation](./README.zh-CN.md)
 
+[Changelog](./CHANGELOG.md)
+
 ## Features
 
 - Dark / Light mode with smooth toggle
