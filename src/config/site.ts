@@ -25,7 +25,7 @@ const site = {
     { name: "Home", subtitle: "Index", href: "/" },
     { name: "Writing", subtitle: "Blog", href: "/posts" },
     { name: "Projects", subtitle: "Works", href: "/projects" },
-    { name: "Friends", subtitle: "Links", href: "/friends" },
+    { name: "Tools", subtitle: "Uses", href: "/tools" },
     { name: "About", subtitle: "Me", href: "/about" },
   ],
 
@@ -38,13 +38,6 @@ const site = {
     },
     { name: "Email", href: "mailto:tre@tregalloway.com", icon: "mdi:email" },
   ],
-
-  friendCard: {
-    name: "Breeze",
-    description: "A minimal Astro theme for personal websites",
-    link: "https://tregalloway.com",
-    avatar: "https://tregalloway.com/logo.svg",
-  },
 
   // --- Homepage Hero ---
   hero: {
@@ -89,64 +82,65 @@ const site = {
   // Each item can use either `icon` (Iconify name) or `logo` (public path or { light, dark } paths)
   tools: [
     {
-      name: "development",
+      name: "hardware",
       items: [
+        { name: "M4 Mac Mini", icon: "mdi:desktop-classic" },
+        { name: "M1 MacBook", icon: "mdi:laptop" },
+        { name: "Windows PC", icon: "mdi:desktop-windows" },
         {
-          name: "VS Code",
-          link: "https://code.visualstudio.com",
-          icon: "mdi:microsoft-visual-studio-code",
+          name: "Bambu Labs A1",
+          link: "https://bambulab.com",
+          icon: "mdi:printer-3d",
         },
-        {
-          name: "WebStorm",
-          link: "https://www.jetbrains.com/webstorm",
-          icon: "mdi:code-braces",
-        },
-        { name: "Terminal", icon: "mdi:terminal" },
-        { name: "Git", link: "https://git-scm.com", icon: "mdi:git" },
-        { name: "Docker", link: "https://www.docker.com", icon: "mdi:docker" },
-        { name: "Postman", link: "https://www.postman.com", icon: "mdi:api" },
       ],
     },
     {
-      name: "design",
+      name: "development",
+      items: [
+        { name: "Zed", link: "https://zed.dev", icon: "mdi:code-braces" },
+        {
+          name: "Ghostty",
+          link: "https://ghostty.org",
+          icon: "mdi:terminal",
+        },
+        {
+          name: "OpenRouter",
+          link: "https://openrouter.ai",
+          icon: "mdi:api",
+        },
+        {
+          name: "OpenCode",
+          link: "https://opencode.ai",
+          icon: "mdi:code-tags",
+        },
+      ],
+    },
+    {
+      name: "browsers",
       items: [
         {
-          name: "Figma",
-          link: "https://www.figma.com",
-          icon: "mdi:vector-polygon",
+          name: "Zen",
+          link: "https://zen-browser.app",
+          icon: "mdi:web",
         },
-        {
-          name: "Sketch",
-          link: "https://www.sketch.com",
-          icon: "mdi:vector-square",
-        },
-        {
-          name: "Adobe XD",
-          link: "https://www.adobe.com/products/xd.html",
-          icon: "mdi:pencil-ruler",
-        },
-        {
-          name: "Photoshop",
-          link: "https://www.adobe.com/products/photoshop.html",
-          icon: "mdi:image-edit",
-        },
+        { name: "Arc", link: "https://arc.net", icon: "mdi:web-circle" },
       ],
     },
     {
       name: "productivity",
       items: [
-        { name: "Notion", link: "https://www.notion.so", icon: "mdi:notebook" },
+        {
+          name: "Raycast",
+          link: "https://raycast.com",
+          icon: "mdi:lightning-bolt",
+        },
         {
           name: "Obsidian",
           link: "https://obsidian.md",
           icon: "mdi:diamond-stone",
         },
-        {
-          name: "Raycast",
-          link: "https://www.raycast.com",
-          icon: "mdi:lightning-bolt",
-        },
-        { name: "Arc Browser", link: "https://arc.net", icon: "mdi:web" },
+        { name: "Apple Notes", icon: "mdi:note-text" },
+        { name: "Apple Reminders", icon: "mdi:clipboard-check" },
       ],
     },
   ],
@@ -158,9 +152,7 @@ const site = {
     postsDescription: "Notes, thoughts, and technical musings",
     projectsTitle: "Projects",
     projectsDescription: "Small tools built for fun or to solve real problems.",
-    friendsTitle: "Friends",
-    friendsDescription: "Like-minded folks around the web.",
-    toolsTitle: "Stack",
+    toolsTitle: "Uses",
     aboutTitle: "About",
     aboutDescription: "About this site and its author",
     backToPosts: "Back to posts",
