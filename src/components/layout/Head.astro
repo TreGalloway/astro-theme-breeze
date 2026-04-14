@@ -1,7 +1,6 @@
 ---
 import site from "@/config/site";
 import type { HeadProps } from "@/types";
-import { Font } from "astro:assets";
 import { ClientRouter } from "astro:transitions";
 
 type Props = HeadProps;
@@ -31,8 +30,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <link rel="manifest" href="/manifest.json" />
 
   <!-- Theme Color -->
-  <meta name="theme-color" content="#3F9C87" />
-  <meta name="msapplication-TileColor" content="#3F9C87" />
+  <meta name="theme-color" content="#1a2125" />
+  <meta name="msapplication-TileColor" content="#1a2125" />
 
   <meta name="generator" content={Astro.generator} />
 
@@ -73,9 +72,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <!-- pagefind -->
   <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
   <script src="/pagefind/pagefind-ui.js" is:inline></script>
-
-  <!-- font  -->
-  <Font cssVariable="--font-display" preload />
 
   <!-- View Transtions -->
   <ClientRouter />

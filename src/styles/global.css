@@ -4,6 +4,34 @@
 
 @import "./theme.css";
 
+@font-face {
+  font-family: "Dank Mono";
+  src: url("/fonts/DankMono-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dank Mono";
+  src: url("/fonts/DankMono-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dank Mono";
+  src: url("/fonts/DankMono-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --font-display: "Dank Mono", ui-monospace, monospace;
+}
+
 /* Focus indicators for accessibility */
 a:focus-visible,
 button:focus-visible {

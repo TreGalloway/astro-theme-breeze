@@ -9,8 +9,8 @@ const artalkEnabled =
 const site = {
   // --- Site Metadata ---
   meta: {
-    title: "Breeze",
-    description: "A minimal Astro theme for personal websites",
+    title: "Tre Galloway",
+    description: "Tre Galloway's personal site",
     author: "Tre Galloway",
     logo: "/logo.svg",
     ogImage: "/og-image.png",
@@ -57,7 +57,7 @@ const site = {
 
   // --- Footer ---
   footer: {
-    copyright: "© 2025 Breeze",
+    copyright: "© 2025 Tre Galloway",
     builtWith: "Built with Astro",
   },
 
@@ -123,7 +123,7 @@ const site = {
           link: "https://zen-browser.app",
           icon: "mdi:web",
         },
-        { name: "Arc", link: "https://arc.net", icon: "mdi:web-circle" },
+        { name: "Arc", link: "https://arc.net", icon: "mdi:earth" },
       ],
     },
     {
