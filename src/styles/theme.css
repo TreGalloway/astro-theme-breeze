@@ -1,72 +1,83 @@
 @import "tailwindcss";
 
 /*
- * Theme Color Customization
- * -------------------------
- * All colors are based on OKLch color space with a consistent hue value.
- * To change the entire color palette, find-and-replace the hue number:
+ * Forest Night Theme
+ * -----------------
+ * A green-based color scheme designed to be warm and soft
+ * to protect developers' eyes.
  *
- *   Current hue: 165 (sage green)
- *
- * Preset hue values:
- *   165 = Sage Green (default)
- *   250 = Ocean Blue
- *   280 = Lavender Purple
- *   330 = Rose Pink
- *    30 = Warm Orange
- *    45 = Golden Yellow
- *   200 = Teal
+ * Dark mode: Forest Night (ethereal dark)
+ * Light mode: Forest Day
  */
 
 :root {
-  /* --- Light Mode: Sage Mist --- */
-  --background: oklch(0.98 0.008 165);
-  --foreground: oklch(0.25 0.02 165);
+  /* --- Light Mode: Forest Day --- */
+  --background: #f1ede4;
+  --surface: #faf8f5;
+  --card: #faf8f5;
+  --card-foreground: #2d3338;
 
-  --card: oklch(0.99 0.005 165);
-  --card-foreground: oklch(0.25 0.02 165);
+  --foreground: #2d3338;
+  --text-muted: #6b7280;
 
-  --primary: oklch(0.5 0.12 165);
-  --primary-foreground: oklch(0.98 0.01 165);
+  --primary: #2d8f84;
+  --primary-foreground: #faf8f5;
 
-  --muted: oklch(0.94 0.01 165);
-  --muted-foreground: oklch(0.35 0.02 165);
+  --muted: #e5e0d8;
+  --muted-foreground: #6b7280;
 
-  --border: oklch(0.92 0.01 165);
-  --shadow-main: 0 10px 40px -10px oklch(0.3 0.05 165 / 0.05);
+  --border: #e5e0d8;
+  --shadow-main: 0 10px 40px -10px rgba(45, 51, 56, 0.15);
 
-  --callout-info: oklch(0.65 0.12 250);
-  --callout-warning: oklch(0.7 0.15 85);
-  --callout-danger: oklch(0.62 0.18 28);
-  --callout-success: oklch(0.6 0.14 160);
+  --accent-teal: #2d8f84;
+  --accent-yellow: #c77a00;
+  --accent-purple: #7d3c9b;
+  --accent-green: #5a7d5a;
+  --accent-coral: #a66b5a;
+  --accent-pink: #b8164d;
+
+  --callout-info: #2d8f84;
+  --callout-warning: #c77a00;
+  --callout-danger: #b8164d;
+  --callout-success: #5a7d5a;
 }
 
 .dark {
-  /* --- Dark Mode: Deep Moss --- */
-  --background: oklch(0.14 0.02 165);
-  --foreground: oklch(0.92 0.005 165);
+  /* --- Dark Mode: Forest Night --- */
+  --background: #1a2125;
+  --surface: #222a30;
+  --card: #222a30;
+  --card-foreground: #c9d1d9;
 
-  --card: oklch(0.18 0.02 165);
-  --card-foreground: oklch(0.88 0.01 165);
+  --foreground: #c9d1d9;
+  --text-muted: #6b7280;
 
-  --primary: oklch(0.75 0.15 160);
-  --primary-foreground: oklch(0.1 0.02 165);
+  --primary: #4ecdc4;
+  --primary-foreground: #1a2125;
 
-  --muted: oklch(0.28 0.02 160);
-  --muted-foreground: oklch(0.75 0.015 165);
+  --muted: #2d3540;
+  --muted-foreground: #6b7280;
 
-  --border: oklch(0.26 0.02 165);
-  --shadow-main: 0 30px 60px -15px oklch(0 0 0 / 0.5);
+  --border: #2d3540;
+  --shadow-main: 0 30px 60px -15px rgba(0, 0, 0, 0.5);
 
-  --callout-info: oklch(0.75 0.12 250);
-  --callout-warning: oklch(0.8 0.15 85);
-  --callout-danger: oklch(0.75 0.18 28);
-  --callout-success: oklch(0.72 0.14 160);
+  --accent-teal: #4ecdc4;
+  --accent-yellow: #f39c12;
+  --accent-purple: #9b59b6;
+  --accent-green: #8fbc8f;
+  --accent-coral: #c78a7a;
+  --accent-pink: #e91e63;
+
+  --callout-info: #4ecdc4;
+  --callout-warning: #f39c12;
+  --callout-danger: #e91e63;
+  --callout-success: #8fbc8f;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-primary: var(--primary);
@@ -74,6 +85,20 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
+  --color-text-muted: var(--text-muted);
+
+  --color-accent-teal: var(--accent-teal);
+  --color-accent-yellow: var(--accent-yellow);
+  --color-accent-purple: var(--accent-purple);
+  --color-accent-green: var(--accent-green);
+  --color-accent-coral: var(--accent-coral);
+  --color-accent-pink: var(--accent-pink);
+
+  --color-callout-info: var(--callout-info);
+  --color-callout-warning: var(--callout-warning);
+  --color-callout-danger: var(--callout-danger);
+  --color-callout-success: var(--callout-success);
+
   --shadow-main: var(--shadow-main);
   --font-display: var(--font-display);
 }
