@@ -4,10 +4,14 @@ import Layout from "@/layouts/Layout.astro";
 import { getEntry, render } from "astro:content";
 
 const about = await getEntry("pages", "about");
-const { Content } = await render(about!);
+if (!about) return Astro.redirect("/404");
+const { Content } = await render(about);
 ---
 
-<Layout title={site.labels.aboutTitle} description={site.labels.aboutDescription}>
+<Layout
+  title={site.labels.aboutTitle}
+  description={site.labels.aboutDescription}
+>
   <div class="animate-in fade-in mx-auto max-w-2xl p-8 duration-700 md:p-16">
     <div class="prose dark:prose-invert">
       <Content />
