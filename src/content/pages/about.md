@@ -1,14 +1,12 @@
 ---
 title: About
-description: Learn more about this site
+description: About Tre Galloway
 ---
 
-Welcome! This is the about page. You can edit this content by modifying `src/content/pages/about.md`.
+Hey, I'm **Tre Galloway**.
 
-## About This Site
+I'm currently learning **Rust**, exploring its use in networking, game development, and IoT. I enjoy diving deep into systems-level programming and building things that run close to the metal.
 
-This site is built with [Astro](https://astro.build) using the Breeze theme. It supports blog posts, projects, and static pages — all managed through simple Markdown files.
+When I'm not coding, you'll find me reading fantasy novels, catching up on manga and anime, or gaming — currently addicted to **Slay the Spire 2**.
 
-## Get in Touch
-
-Feel free to reach out through any of the social links below.
+Want to chat? Reach me at [tre@tregalloway.com](mailto:tre@tregalloway.com).

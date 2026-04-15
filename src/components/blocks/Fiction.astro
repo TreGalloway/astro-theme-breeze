@@ -1,0 +1,50 @@
+---
+import site from "@/config/site";
+
+const starred = site.fiction
+  .flatMap((group) => group.items)
+  .filter((item) => item.starred);
+---
+
+<section class="mb-16">
+  <div class="mb-6 flex items-center justify-between">
+    <h3 class="text-[10px] font-bold tracking-widest text-primary uppercase">
+      My Favorite Works of Fiction
+    </h3>
+    <a
+      href="/fiction"
+      class="text-[10px] font-bold tracking-widest text-muted-foreground uppercase transition-colors hover:text-primary"
+    >
+      View all →
+    </a>
+  </div>
+
+  <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+    {
+      starred.map((item, i) => (
+        <a
+          href="/fiction"
+          class="group flex flex-col gap-2.5 transition-all duration-300 hover:-translate-y-1"
+          style={`animation-delay: ${i * 100}ms`}
+        >
+          <div class="overflow-hidden rounded-xl border border-border/50 bg-muted/20">
+            <img
+              src={item.cover}
+              alt={item.title}
+              class="aspect-[2/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+          <div class="px-1">
+            <span class="line-clamp-2 text-sm leading-tight font-medium text-foreground/90">
+              {item.title}
+            </span>
+            <span class="mt-0.5 inline-block text-[10px] font-bold tracking-wider text-muted-foreground uppercase">
+              {item.category}
+            </span>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+</section>

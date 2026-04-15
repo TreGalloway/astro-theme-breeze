@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300">
+  <rect width="200" height="300" fill="#1a2a3a"/>
+  <rect x="10" y="10" width="180" height="280" fill="#142030" rx="4"/>
+  <text x="100" y="130" text-anchor="middle" fill="#ff4444" font-family="sans-serif" font-size="22" font-weight="bold">ONE PIECE</text>
+  <circle cx="100" cy="195" r="28" fill="none" stroke="#ff4444" stroke-width="2" opacity="0.5"/>
+  <text x="100" y="202" text-anchor="middle" fill="#ff4444" font-family="sans-serif" font-size="20">☠</text>
+  <text x="100" y="265" text-anchor="middle" fill="#ff4444" font-family="sans-serif" font-size="20">⭐</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300">
+  <rect width="200" height="300" fill="#1a2e1a"/>
+  <rect x="10" y="10" width="180" height="280" fill="#142014" rx="4"/>
+  <text x="100" y="120" text-anchor="middle" fill="#5cdb5c" font-family="sans-serif" font-size="13" font-weight="bold">The Primal</text>
+  <text x="100" y="145" text-anchor="middle" fill="#5cdb5c" font-family="sans-serif" font-size="13" font-weight="bold">Hunter</text>
+  <polygon points="100,180 115,210 85,210" fill="#5cdb5c" opacity="0.3"/>
+  <text x="100" y="255" text-anchor="middle" fill="#6a8a6a" font-family="sans-serif" font-size="10">Zogarth</text>
+</svg>

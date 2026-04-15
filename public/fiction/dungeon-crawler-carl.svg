@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300">
+  <rect width="200" height="300" fill="#3a1a2a"/>
+  <rect x="10" y="10" width="180" height="280" fill="#2e1420" rx="4"/>
+  <text x="100" y="110" text-anchor="middle" fill="#ff6b9d" font-family="sans-serif" font-size="12" font-weight="bold">DUNGEON</text>
+  <text x="100" y="135" text-anchor="middle" fill="#ff6b9d" font-family="sans-serif" font-size="12" font-weight="bold">CRAWLER</text>
+  <text x="100" y="160" text-anchor="middle" fill="#ff6b9d" font-family="sans-serif" font-size="12" font-weight="bold">CARL</text>
+  <rect x="75" y="190" width="50" height="50" fill="none" stroke="#ff6b9d" stroke-width="1" opacity="0.3"/>
+  <text x="100" y="255" text-anchor="middle" fill="#8a5a7a" font-family="sans-serif" font-size="10">Matt Dinniman</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300">
+  <rect width="200" height="300" fill="#2a1a1a"/>
+  <rect x="10" y="10" width="180" height="280" fill="#201414" rx="4"/>
+  <text x="100" y="120" text-anchor="middle" fill="#ff5555" font-family="sans-serif" font-size="14" font-weight="bold">Hell's</text>
+  <text x="100" y="145" text-anchor="middle" fill="#ff5555" font-family="sans-serif" font-size="14" font-weight="bold">Paradise</text>
+  <path d="M80 190 L100 170 L120 190 L100 210 Z" fill="#ff5555" opacity="0.25"/>
+  <text x="100" y="260" text-anchor="middle" fill="#8a5a5a" font-family="sans-serif" font-size="10">Anime</text>
+</svg>

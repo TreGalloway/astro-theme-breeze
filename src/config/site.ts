@@ -26,6 +26,7 @@ const site = {
     { name: "Writing", subtitle: "Blog", href: "/posts" },
     { name: "Projects", subtitle: "Works", href: "/projects" },
     { name: "Tools", subtitle: "Uses", href: "/tools" },
+    { name: "Fiction", subtitle: "Favorites", href: "/fiction" },
     { name: "About", subtitle: "Me", href: "/about" },
   ],
 
@@ -145,6 +146,88 @@ const site = {
     },
   ],
 
+  fiction: [
+    {
+      name: "books",
+      items: [
+        {
+          title: "The First Law Trilogy",
+          category: "Book",
+          cover: "/fiction/first-law-trilogy.svg",
+          starred: true,
+        },
+        {
+          title: "Project Hail Mary",
+          category: "Book",
+          cover: "/fiction/project-hail-mary.svg",
+          starred: true,
+        },
+        {
+          title: "The Primal Hunter",
+          category: "Book",
+          cover: "/fiction/the-primal-hunter.svg",
+        },
+        {
+          title: "Dungeon Crawler Carl",
+          category: "Book",
+          cover: "/fiction/dungeon-crawler-carl.svg",
+        },
+      ],
+    },
+    {
+      name: "anime",
+      items: [
+        {
+          title: "Reincarnated as a Slime",
+          category: "Anime",
+          cover: "/fiction/reincarnated-as-a-slime.svg",
+        },
+        {
+          title: "Hell's Paradise",
+          category: "Anime",
+          cover: "/fiction/hells-paradise.svg",
+        },
+        {
+          title: "Saga of Tanya the Evil",
+          category: "Anime",
+          cover: "/fiction/saga-of-tanya-the-evil.svg",
+          starred: true,
+        },
+        {
+          title: "One Piece",
+          category: "Anime",
+          cover: "/fiction/one-piece.svg",
+          starred: true,
+        },
+      ],
+    },
+    {
+      name: "manga",
+      items: [
+        {
+          title: "Legend of the Northern Blade",
+          category: "Manga",
+          cover: "/fiction/legend-of-the-northern-blade.svg",
+        },
+        {
+          title: "MAD",
+          category: "Manga",
+          cover: "/fiction/mad.svg",
+        },
+      ],
+    },
+    {
+      name: "webtoon-light-novel",
+      items: [
+        {
+          title: "The Beginning After The End",
+          category: "Webtoon / Light Novel",
+          cover: "/fiction/the-beginning-after-the-end.svg",
+        },
+      ],
+    },
+  ],
+
   // --- UI Labels ---
   // Customize these values to change the text displayed on pages
   labels: {
@@ -153,6 +236,8 @@ const site = {
     projectsTitle: "Projects",
     projectsDescription: "Small tools built for fun or to solve real problems.",
     toolsTitle: "Uses",
+    fictionTitle: "Favorite Fiction",
+    fictionDescription: "Books, anime, manga, and more that I love",
     aboutTitle: "About",
     aboutDescription: "About this site and its author",
     backToPosts: "Back to posts",
