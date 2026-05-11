@@ -19,12 +19,12 @@ const starred = site.fiction
     </a>
   </div>
 
-  <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+  <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
     {
       starred.map((item, i) => (
         <a
           href="/fiction"
-          class="group flex flex-col gap-2.5 transition-all duration-300 hover:-translate-y-1"
+          class="group flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1"
           style={`animation-delay: ${i * 100}ms`}
         >
           <div class="overflow-hidden rounded-xl border border-border/50 bg-muted/20">
@@ -36,10 +36,10 @@ const starred = site.fiction
             />
           </div>
           <div class="px-1">
-            <span class="line-clamp-2 text-sm leading-tight font-medium text-foreground/90">
+            <span class="line-clamp-2 text-base leading-tight font-medium text-foreground/90">
               {item.title}
             </span>
-            <span class="mt-0.5 inline-block text-[10px] font-bold tracking-wider text-muted-foreground uppercase">
+            <span class="mt-0.5 inline-block text-xs font-bold tracking-wider text-muted-foreground uppercase">
               {item.category}
             </span>
           </div>

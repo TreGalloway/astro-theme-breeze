@@ -50,7 +50,7 @@ const site = {
       {
         icon: "mdi:explore",
         label: "Status",
-        value: "Addicted to Slay the Spire 2",
+        value: "Playing Indie Games and Learning Rust",
       },
       { icon: "mdi:location", label: "Location", value: "New Orleans/Houston" },
     ],
